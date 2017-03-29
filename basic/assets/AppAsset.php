@@ -25,6 +25,7 @@ class AppAsset extends AssetBundle
         'theme_vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css',
         'theme_vendors/jqvmap/dist/jqvmap.min.css',
         'build/css/custom.min.css',
+
     ];
     public $js = [
     "theme_vendors/jquery/dist/jquery.min.js",
@@ -50,14 +51,15 @@ class AppAsset extends AssetBundle
      "theme_vendors/jqvmap/examples/js/jquery.vmap.sampledata.js",
      "theme_vendors/moment/min/moment.min.js",
      "theme_vendors/bootstrap-daterangepicker/daterangepicker.js",
+     "theme_vendors/validator/validator.js",
      "build/js/custom.min.js",
     ];
     // public $jsOptions = array(
     //     'position' => \yii\web\View::POS_HEAD
     // );
     public $depends = [
-        // 'yii\web\YiiAsset',
-        // 'yii\bootstrap\BootstrapAsset',
-    ];
+          // 'yii\web\YiiAsset',
+          // 'yii\bootstrap\BootstrapAsset',
+      ];
 
 }
