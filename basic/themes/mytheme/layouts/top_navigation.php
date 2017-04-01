@@ -1,3 +1,6 @@
+<?php
+use yii\helpers\Html;
+?>
 <!-- top navigation -->
 <div class="top_nav">
   <div class="nav_menu">
@@ -21,7 +24,7 @@
               </a>
             </li>
             <li><a href="javascript:;">Help</a></li>
-            <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+            <li><?php  echo HTML::a( "<i class=\"fa fa-sign-out pull-right\"></i> Log Out</a>", ["site/logout"] );?></li>
           </ul>
         </li>
 
