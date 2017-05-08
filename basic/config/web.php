@@ -55,6 +55,9 @@ $config = [
                 'baseUrl' => '@web/../themes/mytheme',
             ],
         ],
+        'custom'=>[
+            "class"=>"app/components/CustomComponent",
+        ]
     ],
     'params' => $params,
 ];

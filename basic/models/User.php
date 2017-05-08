@@ -85,6 +85,7 @@ class User extends \yii\base\Object implements \yii\web\IdentityInterface
      */
     public static function findByUsername($username)
     {
+        $dbuser = null;
         $user = new User;
         $User = Users::findOne(['username' => $username]);
         if ($User!=null) {
